@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Gulp</title>
+</head>
+
+<body>
+  <!-- @@include('_header.html') -->
+  <main>
+    <section class="main-screen">
+      <div class="container-fluid full-height">
+        <div class="row full-height">
+          <div class="col-lg-5 d-flex flex-column align-center">
+            <div class="main-screen__title">
+              <span>we are</span><br>
+              creative <br>
+              oranges
+            </div>
+            <div class="main-screen__subtitle">
+              OrangeOrange studio is a small team of <br> designers and front-end developers
+            </div>
+            <div class="main-screen__callback callback-modal modalTrigger" data-modal="#callback-modal">DROP US A LINE
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 d-flex flex-column align-center">
+          <div class="main-screen__image default-icon">
+            <img src="./img/main-screen-image.svg" alt="Creative Agency">
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="elements">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="elements__heading section-heading">
+              <span>3 elements</span> <br> <span>we rely on</span>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-justify">
+          <div class="elements__images">
+            <div class="images__item pink-1">
+              <div class="images__item_inner">
+                <img src="./img/icon-gems.svg">
+              </div>
+              <div class="images__item_text">
+                HIGH <br>
+                Quality
+              </div>
+            </div>
+            <div class="images__item green-2">
+              <div class="images__item_inner">
+                <img src="./img/icon-price.svg">
+              </div>
+              <div class="images__item_text">
+                REASONABLE <br>
+                prices
+              </div>
+            </div>
+            <div class="images__item yellow-3">
+              <div class="images__item_inner">
+                <img src="./img/icon-lightning.svg">
+              </div>
+              <div class="images__item_text">
+                HIGH <br>
+                Speed
+              </div>
+            </div>
+          </div>
+          <div class="elements__description">
+            <div class="description__item">
+              <div class="description__item_title pink-1">High Quality</div>
+              <div class="description__item_text">In short, a high quality website is one that provides relevant, useful
+                content and a good user experience, however, there are many individual factors that need to be
+                considered beyond that summarisation.</div>
+            </div>
+            <div class="description__item">
+              <div class="description__item_title green-2">Reasonable Prices</div>
+              <div class="description__item_text">In short, a high quality website is one that provides relevant, useful
+                content and a good user experience, however, there are many individual factors that need to be
+                considered beyond that summarisation.</div>
+            </div>
+            <div class="description__item">
+              <div class="description__item_title yellow-3">High Speed</div>
+              <div class="description__item_text">In short, a high quality website is one that provides relevant, useful
+                content and a good user experience, however, there are many individual factors that need to be
+                considered beyond that summarisation.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="workflow">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="workflow__heading section-heading">
+              <span>OUR WORKFLOW</span>
+              <p class="workflow__description">Here you can see how we implement projects from scratch to ready
+                decision. In order we need 2-3 weeks to make you happy. Ofcourse, it also depends on the complexity of
+                the project</p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="workflow__image default-icon">
+              <img src="./img/workflow-image.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="row tabs">
+          <div class="col-lg-12">
+            <ul class="tabs-list tabs-ul">
+              <li class="tabs-list__item">
+                <a onclick="front.openTab(this, 'tab-0','.tabs')" class="tabs-list__item_link tab-links active">
+                  LANDING PAGE</a>
+              </li>
+              <li class="tabs-list__item">
+                <a onclick="front.openTab(this, 'tab-1','.tabs')" class="tabs-list__item_link tab-links">
+                  CORPORATIVE website</a>
+              </li>
+            </ul>
+
+            <div class="tabs-wrap">
+              <div class="tab-content active" id="tab-0">
+                <div class="workflow__table">
+                  <div class="table__title">
+                    <div class="table__title_item">
+                      <h3 class="table__title_heading">
+                        Concept
+                      </h3>
+                      <span class="table__divider table-red"></span>
+                      <div class="table__title_terms">
+                        Day 1 - 3
+                      </div>
+                    </div>
+                    <div class="table__title_item">
+                      <h3 class="table__title_heading">
+                        Design
+                      </h3>
+                      <span class="table__divider table-blue"></span>
+                      <div class="table__title_terms">
+                        Day 3 - 6
+                      </div>
+                    </div>
+                    <div class="table__title_item">
+                      <h3 class="table__title_heading">
+                        coding
+                      </h3>
+                      <span class="table__divider table-yellow"></span>
+                      <div class="table__title_terms">
+                        Day 6 - 9
+                      </div>
+                    </div>
+                    <div class="table__title_item">
+                      <h3 class="table__title_heading">
+                        Delivery
+                      </h3>
+                      <span class="table__divider table-green"></span>
+                      <div class="table__title_terms">
+                        Day 9 - 10
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table__content">
+                    <div class="table__content_item table-red">
+                      <div class="table__content_circle"></div>
+                      <div class="table__content_title">Research</div>
+                      <div class="table__content_description">(Problems, Existing products)</div>
+                      <div class="table__content_toltip">
+                        Research phase is the phase, where designer and
+                        project manager working in pair to find the problems of the target audience. Work is also
+                        underway to find similar products.
+                      </div>
+                    </div>
+                    <div class="table__content_item table-blue">
+                      <div class="table__content_circle"></div>
+                      <div class="table__content_title">UX/UI Design</div>
+                      <div class="table__content_description">(Moodboard, UI Concept, Adaptive Design, UI Kit)</div>
+                      <div class="table__content_toltip">
+                        Research phase is the phase, where designer and
+                        project manager working in pair to find the problems of the target audience. Work is also
+                        underway to find similar products.
+                      </div>
+                    </div>
+                    <div class="table__content_item table-yellow">
+                      <div class="table__content_circle"></div>
+                      <div class="table__content_title">HTMLS / CSS / JS</div>
+                      <div class="table__content_description">(Design into code)</div>
+                      <div class="table__content_toltip">
+                        Research phase is the phase, where designer and
+                        project manager working in pair to find the problems of the target audience. Work is also
+                        underway to find similar products.
+                      </div>
+                    </div>
+                    <div class="table__content_item table-green">
+                      <div class="table__content_circle"></div>
+                      <div class="table__content_title">Project Delivery</div>
+                      <div class="table__content_description"></div>
+                      <div class="table__content_toltip">
+                        Research phase is the phase, where designer and
+                        project manager working in pair to find the problems of the target audience. Work is also
+                        underway to find similar products.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content" id="tab-1">
+                2
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="portfolio__heading section-heading">
+              <span>PORTFOLIO</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-list d-flex flex-column">
+          <a href="#" class="portfolio__item">
+            <div class="portfolio__item_image default-icon reveal">
+              <img src="./img/case-spiderfoot1.svg" class="img" alt="Spider Foot">
+            </div>
+            <div class="portfolio__item_text text">
+              <div class="portfolio__item_text_title text">SPIDERFOOT</div>
+              <div class="portfolio__item_text_subtitle text">UX/UI Design / Frontented Development</div>
+            </div>
+          </a>
+          <a href="#" class="portfolio__item">
+            <div class="portfolio__item_image default-icon reveal">
+              <img src="./img/case-metoo.jpg" class="img" alt="Metoo">
+            </div>
+            <div class="portfolio__item_text text-right">
+              <div class="portfolio__item_text_title text-right">#METOO</div>
+              <div class="portfolio__item_text_subtitle text-right">UX/UI Design / Frontented Development</div>
+            </div>
+          </a>
+          <a href="#" class="portfolio__item">
+            <div class="portfolio__item_image default-icon reveal">
+              <img src="./img/case-tours.jpg" class="img" alt="Brewery Tours">
+            </div>
+            <div class="portfolio__item_text text">
+              <div class="portfolio__item_text_title text">Brewery Tours</div>
+              <div class="portfolio__item_text_subtitle text">UX/UI Design / Frontented Development</div>
+            </div>
+          </a>
+          <a href="#" class="portfolio__item">
+            <div class="portfolio__item_image default-icon reveal">
+              <img src="./img/case-fundraiso.jpg" class="img" alt="Fundraiso">
+            </div>
+            <div class="portfolio__item_text text-right">
+              <div class="portfolio__item_text_title text-right">Fundraiso</div>
+              <div class="portfolio__item_text_subtitle text-right">UX/UI Design / Frontented Development</div>
+            </div>
+          </a>
+          <a href="#" class="portfolio__item">
+            <div class="portfolio__item_image default-icon reveal">
+              <img src="./img/case-itportal.jpg" class="img" alt="it portal">
+            </div>
+            <div class="portfolio__item_text text">
+              <div class="portfolio__item_text_title text">IT Portal</div>
+              <div class="portfolio__item_text_subtitle text">UX/UI Design / Frontented Development</div>
+            </div>
+          </a>
+          <a href="#" class="portfolio__item">
+            <div class="portfolio__item_image default-icon reveal">
+              <img src="./img/case-willa.jpg" class="img" alt="Willa">
+            </div>
+            <div class="portfolio__item_text text-right">
+              <div class="portfolio__item_text_title text-right">Willa</div>
+              <div class="portfolio__item_text_subtitle text-right">UX/UI Design / Frontented Development</div>
+            </div>
+          </a>
+          <a href="#" class="portfolio__item">
+            <div class="portfolio__item_image default-icon reveal">
+              <img src="./img/case-greengarden.jpg" class="img" alt="green garden">
+            </div>
+            <div class="portfolio__item_text text">
+              <div class="portfolio__item_text_title text smaller-title">Green Gardern</div>
+              <div class="portfolio__item_text_subtitle text">UX/UI Design / Frontented Development</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="competence">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="competence__heading section-heading">
+              <span>OUR COMPETENCE</span>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-middle flex-column">
+          <div class="competence__item">
+            <div class="item__text">
+              <div class="item__text_title">UX/UI Design</div>
+              <div class="item__text_description">Creative designs and user-friendly interfaces can contribute to your
+                business success and bring you new and interesting opportunities</div>
+            </div>
+            <div class="item__image">
+              <img src="./img/competence-1.svg" alt="abstract image">
+            </div>
+          </div>
+          <div class="competence__item left">
+            <div class="item__text">
+              <div class="item__text_title">UX/UI Design</div>
+              <div class="item__text_description">Creative designs and user-friendly interfaces can contribute to your
+                business success and bring you new and interesting opportunities</div>
+            </div>
+            <div class="item__image">
+              <img src="./img/competence-2.svg" alt="abstract image">
+            </div>
+          </div>
+          <div class="competence__item">
+            <div class="item__text">
+              <div class="item__text_title">UX/UI Design</div>
+              <div class="item__text_description">Creative designs and user-friendly interfaces can contribute to your
+                business success and bring you new and interesting opportunities</div>
+            </div>
+            <div class="item__image">
+              <img src="./img/competence-3.svg" alt="abstract image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container-fluid">
+        <div class="row --relative">
+          <div class="col-lg-7">
+            <div class="contacts__heading section-heading">
+              <span>ReaDy to share</span> <br> <span>your business idea with us?</span>
+            </div>
+            <div class="main-screen__callback callback-modal modalTrigger" data-modal="#callback-modal">DROP US A LINE
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="contacts__image default-icon">
+              <img src="./img/contacts-image.svg" alt="Abstract">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-image default-icon">
+          <img src="./img/footer-image.svg" alt="">
+        </div>
+        <div class="container-fluid">
+          <div class="row d-flex align-justify align-middle">
+            <div class="footer-logo">
+              <img src="./img/main-logo.svg" alt="Orange Orange logo">
+            </div>
+            <div class="footer-location">
+              Lviv, Ukraine st. Dnisterska 14
+            </div>
+            <div class="footer-copyright">
+              © OrangeOrange.agency, 2020
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <div class="modal" id="callback-modal">
+    <div class="modal__body">
+      <div class="modal__content">
+        <div class="modal__close">
+          <img src="./img/modal-close.svg" alt="">
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="modal__title">
+                <div class="modal__title_heading">Let’s get <br> in touch</div>
+                <div class="modal__title_helper">Want to discuss your product or partnership? <br>
+                  We’re always ready to help.</div>
+                <a href="mailto:HELLO@ORANGEORANGE.COM" class="modal__title_email">HELLO@ORANGEORANGE.COM</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="modal__form">
+                <form action="">
+                  <div class="form-control">
+                    <input type="text" class="form-input" name="name" autocomplete="off" required />
+                    <label for="name" class="label-name">
+                      Name<span>*</span>
+                    </label>
+                  </div>
+                  <div class="form-control">
+                    <input type="email" class="form-input" name="email" autocomplete="off" required />
+                    <label for="email" class="label-name">
+                      Email<span>*</span>
+                    </label>
+                  </div>
+                  <div class="form-control">
+                    <input type="text" class="form-input" name="country" autocomplete="off" required />
+                    <label for="country" class="label-name">
+                      Your country<span>*</span>
+                    </label>
+                  </div>
+                  <div class="form-control form-control-file">
+                    <input id="uploadFile" class="form-input">
+                    <label for="" class="label-name">File<span>*</span></label>
+                    <div class="fileBrowse">
+                      <span class="wpcf7-form-control-wrap fileupload">
+                      <input type="file"
+                          name="fileupload" size="40" class="wpcf7-form-control wpcf7-file form-file" id="uploadBtn"
+                          accept=".png,.jpg,.jpeg,.zip,.rar,.doc,.docx,.txt" aria-invalid="false">
+                        </span>
+                      </div>
+                  </div>
+                  <div class="form-control">
+                    <textarea name="Message" class="form-input" autocomplete="off" required></textarea>
+                    <label for="country" class="label-name">
+                      Your message<span>*</span>
+                    </label>
+                  </div>
+                  <div class="form-submit-container button-circle">
+                    <button class="form-submit" type="submit">SEND MESSAGE</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="js/libs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,98 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.home-callback {
+  @media (max-width: $breakpoint-xl) {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+  cursor: pointer;
+  &:before {
+    content: '';
+    position: absolute;
+    background: $primaryColor;
+    height: get-vh(80px);
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 100px;
+    z-index: -1;
+    left: get-vw(-150px);
+    transition: all .4s cubic-bezier(1, -0.02, 0, 0.99);
+    @media (max-width: $breakpoint-xl) {
+      width: 330px;
+      left: -160px;
+      height: 70px;
+    }
+    @media (max-width: $breakpoint-lg) {
+      width: 300px;
+    }
+  }
+  &:hover {
+    &:before {
+      left: -3.4vw;
+      @media (max-width: $breakpoint-xl) {
+        left: -70px;
+      }
+      @media (max-width: $breakpoint-lg) {
+        left: -52px;
+      }
+    }
+  }
+}
+.header-callback-thankyou:before {
+  width: 21.3vw;
+}
+.header-callback {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: get-vw(16px);
+  line-height: get-vw(16px);
+  z-index: 11;
+  cursor: pointer;
+  @include fontRWB;
+  @media (max-width: $breakpoint-lg) {
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  &-container {
+    @media (max-width: $breakpoint-lg) {
+      padding: 0;
+    }
+  }
+  &:before {
+    position: absolute;
+    right: get-vw(-130px);
+    top: 50%;
+    height: 100%;
+    content: '';
+    background: $primaryColor;
+    border-radius: 100px;
+    z-index: -1;
+    transform: translate(0, -50%);
+    transition: all .4s cubic-bezier(1, -0.02, 0, 0.99);
+    @media (max-width: $breakpoint-xl) {
+      width: 20vw;
+    }
+    @media (max-width: $breakpoint-sm) {
+      width: 150px;
+      right: -67px;
+    }
+  }
+  &:hover {
+    &:before {
+      left: unset;
+      right: -5.3vw;
+      @media (max-width: $breakpoint-xl) {
+        right: -4.5vw;
+        width: 22vw;
+      }
+      @media (max-width: $breakpoint-lg) {
+        width: 180px;
+      }
+      @media (max-width: $breakpoint-sm) {
+        right: -34px;
+      }
+    }
+  }
+}

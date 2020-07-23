@@ -1,0 +1,235 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+.form-section {
+  margin-bottom: get-vw(40px);
+  @media (max-width: $breakpoint-xl) {
+    margin-bottom: 30px;
+  }
+}
+.form-heading {
+  @include fontRWR;
+  font-size: get-vw(30px);
+  line-height: get-vw(40px);
+  margin-bottom: get-vw(16px);
+  @media (max-width: $breakpoint-xl) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 26px;
+  }
+}
+.form-required-fields {
+  margin-bottom: get-vw(8px);
+  & span {
+    color: #CB2525;
+  }
+  @media (max-width: $breakpoint-xl) {
+    margin-bottom: 8px;
+  }
+}
+.form-checkbox {
+  position: relative;
+  margin: 0 24px 4px 0;
+  & label {
+    margin-left: get-vw(24px);
+    @media (max-width: $breakpoint-xl) {
+      margin-left: 24px;
+    }
+    cursor: pointer;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: get-vw(16px);
+      height: get-vw(16px);
+      border: 2px solid $primaryColor;
+      @include transition(.3);
+      border-radius: 4px;
+      cursor: pointer;
+      @media (max-width: $breakpoint-xl) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  & input {
+    display: none;
+    &:checked ~ label:before {
+      background-image: url('../img/icon-checkmark.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 90%;
+      z-index: 2;
+    }
+    &:checked ~ label:after {
+      background: $primaryColor;
+    }
+  }
+}
+
+.form-control {
+  margin-bottom: get-vw(24px);
+  position: relative;
+  border-bottom: 1px solid #c4c4c4;
+  @media (max-width: $breakpoint-xl) {
+    margin-bottom: 34px;
+  }
+  & input {
+    height: get-vw(40px);
+    @media (max-width: $breakpoint-xl) {
+      height: 50px;
+    }
+  }
+  & textarea {
+    height: 9vw;
+    padding-top: 2vh;
+    font-family: inherit;
+    font-size: inherit;
+    resize: none;
+    @media (max-width: $breakpoint-xl) {
+      height: 100px;
+      padding-top: 5px;
+    }
+  }
+  & input, textarea {
+    width: 100%;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    font-size: 1.2vw;
+    @media (max-width: $breakpoint-md) {
+      font-size: 14px;
+    }
+  }
+  & label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: get-vw(12px);
+    transition: all .3s cubic-bezier(1, -0.02, 0, 0.99);
+    pointer-events: none;
+    & span {
+      transition: all .3s cubic-bezier(1, -0.02, 0, 0.99);
+      color: #CB2525;
+      margin-left: get-vw(5px);
+    }
+    @media (max-width: $breakpoint-md) {
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+  & .form-line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  & input:focus ~ label, & input.has-content ~ label, 
+  & textarea:focus ~ label, & textarea.has-content ~ label {
+    top: get-vw(-15px);
+    color: #c4c4c4;
+    @media (max-width: $breakpoint-xl) {
+      font-size: 15px;
+      line-height: 25px;
+    }
+    & span {
+      color: #FDC430; 
+    }
+  }
+  & .label-name.active {
+    & span {
+      color: #FDC430; 
+    }
+    top: get-vw(-15px);
+    color: #FDC430; 
+    @media (max-width: $breakpoint-xl) {
+      top: -20px;
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+}
+
+.fileBrowse input.form-file {
+  opacity: 0;
+}
+
+.fileBrowse {
+  background: url("../img/icon-file.svg") no-repeat center;
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+.form-number-container {
+  display: flex;
+  & .form-control {
+    width: 100%;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.form-checkboxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 620px) {
+    flex-direction: column;
+  }
+}
+.form-submit-container {
+  margin-left: 2vw;
+  @media (max-width: $breakpoint-xl) {
+    margin-left: 15px;
+  }
+}
+
+
+
+.button-circle {
+  display: inline-block;
+  outline: none;
+  & button, & a {
+    border: none;
+    background: transparent;
+    @include fontRWB;
+    font-size: get-vw(22px);
+    color: #434343;
+    margin-top: 5vh;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    @media (max-width: $breakpoint-xl) {
+      font-size: 25px;
+      line-height: 35px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: get-vw(130px);
+      height: get-vw(80px);
+      background: #FDC430;
+      border-radius: 100px;
+      z-index: -1;
+      pointer-events: none;
+      left: -10%;
+      top: calc(50% - 3.5vw);
+      transition: all .6s cubic-bezier(1, -0.02, 0, 0.99);
+      @media (max-width: $breakpoint-xl) {
+        width: 140px;
+        height: 80px;
+        top: calc(50% - 40px);
+      }
+    }
+    &:hover {
+      &:before {
+        width: 120%;
+      }
+    }
+  }
+}

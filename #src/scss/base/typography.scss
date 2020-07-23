@@ -1,0 +1,61 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.--regular {
+  font-weight: 400;
+}
+
+.--medium {
+  font-weight: 500;
+}
+
+.--bold {
+  font-weight: 700;
+}
+
+.--uppercase {
+  text-transform: uppercase;
+}
+
+.section-heading {
+  display: inline-block;
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 10px;
+  }
+  & span {
+    @include fontRWB;
+    font-size: get-vw(55px);
+    line-height: get-vw(57px);
+    text-transform: uppercase;
+    position: relative;
+    @media (max-width: $breakpoint-lg) {
+      font-size: 29px;
+      line-height: 40px;
+    }
+    &.underlined {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: get-vh(40px);
+        background: rgba(253, 196, 48, 0.3);
+        border-radius: 20px;
+        bottom: -1vh;
+        left: 0;
+        z-index: -1;
+        @media (max-width: $breakpoint-lg) {
+          height: 12px;
+          bottom: -5px;
+        }
+      }
+    }
+  }
+}
