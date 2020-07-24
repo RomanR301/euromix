@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../#src/scss/layout/footer.scss",
+        "../#src/scss/abstracts/mixins.scss",
+        "../#src/scss/abstracts/variables.scss"
+    ],
+    "names": [],
+    "file": "footer.css"
+}

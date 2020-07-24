@@ -25,37 +25,52 @@
   text-transform: uppercase;
 }
 
-.section-heading {
-  display: inline-block;
-  @media (max-width: $breakpoint-md) {
-    margin-bottom: 10px;
-  }
-  & span {
-    @include fontRWB;
-    font-size: get-vw(55px);
-    line-height: get-vw(57px);
-    text-transform: uppercase;
-    position: relative;
-    @media (max-width: $breakpoint-lg) {
-      font-size: 29px;
-      line-height: 40px;
-    }
-    &.underlined {
-      &:before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: get-vh(40px);
-        background: rgba(253, 196, 48, 0.3);
-        border-radius: 20px;
-        bottom: -1vh;
-        left: 0;
-        z-index: -1;
-        @media (max-width: $breakpoint-lg) {
-          height: 12px;
-          bottom: -5px;
-        }
-      }
-    }
-  }
+.heading-1 {
+  @include fontSize(30, 56);
+  line-height: 1.07;
+}
+
+.heading-2 {
+  @include fontSize(24, 36);
+  line-height: 1.33;
+}
+
+.heading-3 {
+  @include fontSize(20, 24);
+  line-height: 1.16;
+}
+
+.heading-4 {
+  @include fontSize(16, 18);
+  line-height: 1.33;
+}
+
+.heading-5 {
+  @include fontSize(14, 16);
+  line-height: 1.33;
+}
+
+.icon-icon-arrow-slider-2:before {
+  content: "\e901";
+}
+.icon-icon-arrow-slider-1:before {
+  content: "\e900";
+}
+.icon-icon-cart:before {
+  content: "\e902";
+}
+.icon-icon-facebook:before {
+  content: "\e903";
+}
+.icon-icon-instagram:before {
+  content: "\e904";
+}
+.icon-icon-search:before {
+  content: "\e905";
+}
+.icon-icon-send:before {
+  content: "\e906";
+}
+.icon-icon-tick:before {
+  content: "\e907";
 }

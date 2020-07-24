@@ -18,7 +18,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: 'Mont-Regular', sans-serif;
+  font-family: 'GothamPro', sans-serif;
   font-weight: 400;
   vertical-align: baseline;
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
@@ -26,13 +26,12 @@ time, mark, audio, video {
 
 body {
   position: relative;
-  font-family: 'Mont-Regular', sans-serif;
+  font-family: 'GothamPro', sans-serif;
   font-weight: 400;
-  font-size: get-vw(12px);
+  font-size: 16px;
   line-height: 1.7;
   color: $defaultText;
-  overflow-x: hidden;
-  // background: $bodyBackground;
+  // overflow-x: hidden;
   @media (max-width: $breakpoint-xl) {
     font-size: 15px;
   }

@@ -6,12 +6,18 @@ $breakpoint-grid-xl: 1200px;
 $breakpoint-sm: 575px;
 $breakpoint-md: 767px;
 $breakpoint-lg: 991px;
-$breakpoint-xl: 1140px;
+$breakpoint-xl: 1200px;
 
+$defaultText: #333333;
 $whiteColor: #ffffff;
-$naturalBlackColor: #000000;
-$blackColor: #333333;
-$primaryColor: #FDC430;
+$blackColor: #000000;
+$lightGreyColor: #F4F4F4;
+$heavyGreyColor: #7C7C7C;
+$midGreyColor: #E7E7E7;
+$greenColor: #2E8E00;
+$redColor: #8E0000;
+$yellowColor: #E9B32A;
+$blackToWhite: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
 
-$defaultText: #434343;
+
 
