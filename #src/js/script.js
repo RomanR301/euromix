@@ -118,8 +118,8 @@ jQuery(function () {
         el: '.swiper-pagination',
         // dynamicBullets: true,
       },
-      mousewheel: true,
-      keyboard: true,
+    //   mousewheel: true,
+    //   keyboard: true,
     });
 
 });
