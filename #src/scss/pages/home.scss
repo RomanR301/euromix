@@ -1,33 +1,44 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+// * {
+//   outline: 1px solid red;
+// }
+
 // MAIN SCREEN
 
-main {
-  height: calc(100vh - 77px);
+.banner {
+  height: calc(100vh - 79px);
+  & .swiper-button-next, .swiper-button-prev {
+    color: #333;
+    width: 62px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  & .swiper-button-next:after, .swiper-button-prev:after {
+    font-family: 'icomoon';
+    content: "\e900";
+  }
+  & .swiper-button-next:after {
+    transform: rotate(-180deg);
+  }
+  & .swiper-pagination-bullet {
+    opacity: 1;
+    background: $whiteColor;
+  }
+  & .swiper-pagination-bullets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & .swiper-pagination-bullet-active {
+    width: 16px;
+    height: 16px;
+    background: #333;
+    border: 2px solid #fff;
+  }
 }
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
+

@@ -116,12 +116,11 @@ jQuery(function () {
       },
       pagination: {
         el: '.swiper-pagination',
-        dynamicBullets: true,
+        // dynamicBullets: true,
       },
       mousewheel: true,
       keyboard: true,
     });
- 
 
 });
 
