@@ -50,6 +50,12 @@
   line-height: 1.33;
 }
 
+.section-heading {
+  font-weight: 900;
+  @include fontSize(36, 56);
+  line-height: 1;
+}
+
 .icon-icon-arrow-slider-2:before {
   content: "\e901";
 }
