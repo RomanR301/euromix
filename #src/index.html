@@ -1,5 +1,5 @@
 @@include('_header.html')
-<main>
+<main class="home">
   <section class="banner">
     <div class="swiper-container swiper-banner">
       <div class="swiper-wrapper">
@@ -81,7 +81,31 @@
     </div>
   </section>
   @@include('./scss/ui-kit/carousel-product/_product-slider.html')
-
+  <section class="subscribe">
+    <div class="container-fluid">
+      <div class="row m-0 d-flex">
+        <div class="col-lg-6">
+          <div class="subscribe-image default-icon">
+            <img src="./img/subscribe.jpg" alt="subscribe">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="subscribe-content">
+            <div class="subscribe-content__heading">
+              <div class="heading-title heading-2 --bold">Підпишіться</div>
+              <div class="heading-subtitle heading-2 --bold">та отримайте -100 грн
+                на перше замовлення</div>
+            </div>
+            <form action="">
+              <div class="subscribe-form">
+                <input type="email" name="subscribe-email" placeholder="Ваш Email">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>
 @@include('_footer.html')

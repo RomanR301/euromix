@@ -4,7 +4,14 @@
 // * {
 //   outline: 1px solid red;
 // }
-
+.home {
+  section {
+    margin-bottom: 100px;
+  }
+  & .banner {
+    margin-bottom: 0;
+  }
+}
 // MAIN SCREEN
 
 .banner {
@@ -40,7 +47,6 @@
 }
 
 .home-cat {
-  margin-bottom: 100px;
   & .row {
     margin: 0;
   }
@@ -91,6 +97,79 @@
       height: 80px;
       z-index: -1;
     }
+  }
+}
+
+.subscribe {
+  &-content {
+    padding: 90px 0 70px 60px;
+    background: #F6E6D9;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__heading{
+      max-width: 425px;
+      position: relative;
+      &:before {
+        content: '';
+        background: url('../../img/circles.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 72px;
+        height: 72px;
+        left: -30px;
+        top: -30px;
+      }
+    }
+    &:before {
+      content: '';
+      background: #f1c19d;
+      width: 350px;
+      height: 350px;
+      position: absolute;
+      right: -120px;
+      top: -120px;
+      border-radius: 100%;
+      z-index: -1;
+    }
+  }
+  &-form {
+    position: relative;
+    width: 270px;
+    &:before {
+      font-family: 'icomoon';
+      content: "\e906";
+      position: absolute;
+      right: 0;
+    }
+    & input {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #333333;
+      outline: none;
+      width: 100%;
+      padding: 5px 0;
+      &::placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: $defaultText;
+        opacity: 1;
+      }
+      &:-ms-input-placeholder { 
+       color: $defaultText;
+      }
+      &::-ms-input-placeholder {
+       color: $defaultText;
+      }
+    }
+
   }
 }
 

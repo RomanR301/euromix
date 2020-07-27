@@ -1,8 +1,9 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
-.product {
+// CARD ITEM
 
+.product {
   &__image {
     position: relative;
     overflow: hidden;
@@ -40,6 +41,7 @@
       flex-direction: row-reverse;
       justify-content: flex-end;
       align-items: center;
+      padding-bottom: 20px;
       & > span:first-child, & > ins > span {
         background: $defaultText;
         color: $whiteColor;
