@@ -1138,7 +1138,7 @@ input[type=number] {
 
 .sub-menu-container .sub-menu {
   width: 100%;
-  max-width: 316px;
+  max-width: 33.33%;
 }
 
 .sub-menu-container .sub-menu .menu-item {
