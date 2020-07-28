@@ -32,8 +32,8 @@
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../../fonts/icomoon.eot?h7lkbl");
-  src: url("../../fonts/icomoon.eot?h7lkbl#iefix") format("embedded-opentype"), url("../../fonts/icomoon.woff?h7lkbl") format("woff"), url("../../fonts/icomoon.svg?h7lkbl#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?h7lkbl");
+  src: url("../fonts/icomoon.eot?h7lkbl#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?h7lkbl") format("truetype"), url("../fonts/icomoon.woff?h7lkbl") format("woff"), url("../fonts/icomoon.svg?h7lkbl#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;

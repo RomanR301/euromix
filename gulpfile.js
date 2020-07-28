@@ -19,7 +19,7 @@ let path = {
     js: source_folder + '/js/script.js',
     // libs: source_folder + '/libs/*.js',
     img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp,json}',
-    fonts: source_folder + '/fonts/*.{ttf,woff}',
+    fonts: source_folder + '/fonts/*.{ttf,woff,woff2}',
   },
   watch: {
     html: source_folder + '/**/*.html',
