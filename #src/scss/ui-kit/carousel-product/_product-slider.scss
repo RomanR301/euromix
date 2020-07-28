@@ -39,3 +39,11 @@
   }
 }
 
+.product-carousel {
+  & .swiper-slide {
+    min-height: 100%;
+  }
+  & .product {
+    
+  }
+}

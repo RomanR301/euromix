@@ -73,6 +73,27 @@
       }
     }
   }
+  @media (max-width: $breakpoint-lg) {
+    &-columns {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      & .footer-logo {
+        margin-bottom: 15px;
+      }
+      &:first-child {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-md) {
+    &-columns {
+      text-align: center;
+    }
+  }
+
 }
 
 .copyright-by {

@@ -26,7 +26,7 @@
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-  margin: 0 4px;
+  // margin: 0 4px;
 }
 
 .d-flex {
@@ -48,6 +48,13 @@
   width: unset;
   @media (max-width: $breakpoint-sm) {
     margin: 0 !important;
+  }
+}
+
+.slider-padding {
+  padding: 0 15px;
+  @media (max-width: $breakpoint-sm) {
+    padding: 0 5px;
   }
 }
 

@@ -56,6 +56,16 @@
   line-height: 1;
 }
 
+.section-carousel {
+  & .section-heading {
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      justify-content: space-between;
+      margin: 0 8px;
+    }
+  }
+}
+
 .icon-icon-arrow-slider-2:before {
   content: "\e901";
 }

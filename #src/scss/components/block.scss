@@ -4,6 +4,8 @@
 // CARD ITEM
 
 .product {
+  display: block;
+  height: 100%;
   &__image {
     position: relative;
     overflow: hidden;
@@ -33,6 +35,7 @@
 
   &__info {
     background: $lightGreyColor;
+    height: 100%;
     &_title {
       padding: 16px 8px;
     }
@@ -42,6 +45,10 @@
       justify-content: flex-end;
       align-items: center;
       padding-bottom: 20px;
+      @media (max-width: $breakpoint-sm) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
       & > span:first-child, & > ins > span {
         background: $defaultText;
         color: $whiteColor;
@@ -51,8 +58,11 @@
         line-height: 17px;
         display: flex;
         position: relative;
-        margin-right: 30px;
+        margin-right: 22px;
         z-index: 2;
+        @media (max-width: $breakpoint-sm) {
+          margin: 0 0 10px 0;
+        }
         &:before {
           content: '';
           background: #333;

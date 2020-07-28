@@ -5,6 +5,9 @@
       font-size: 16px;
       line-height: 15px;
       margin-left: 50px;
+      @media (max-width: $breakpoint-md) {
+        margin: 10px
+      }
     }
   }
   &-product {
@@ -23,7 +26,7 @@
       justify-content: center;
       padding-bottom: 10px;
       z-index: 2;
-      font-size: 24px;
+      @include fontSize(18, 24);
       line-height: 28px;
       transition: all .3s ease-in-out;
       &:before {
