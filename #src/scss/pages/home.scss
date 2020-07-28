@@ -92,7 +92,7 @@
     z-index: 2;
     font-size: 24px;
     line-height: 23px;
-    @include transition(.3);
+    transition: all .3s ease-in-out;
     &:before {
       content: '';
       position: absolute;
@@ -148,12 +148,12 @@
   &-form {
     position: relative;
     width: 270px;
-    &:before {
-      font-family: 'icomoon';
-      content: "\e906";
-      position: absolute;
-      right: 0;
-    }
+    // &:before {
+    //   font-family: 'icomoon';
+    //   content: "\e906";
+    //   position: absolute;
+    //   right: 0;
+    // }
     & input {
       background: transparent;
       border: none;
@@ -173,6 +173,16 @@
       }
       &::-ms-input-placeholder {
        color: $defaultText;
+      }
+    }
+    & button {
+      outline: none;
+      position: absolute;
+      right: 0;
+      background: transparent;
+      border: none;
+      & i {
+        font-size: 18px;
       }
     }
 
