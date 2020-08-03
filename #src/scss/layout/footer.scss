@@ -40,39 +40,6 @@
   &-description {
     max-width: 80%;
   }
-  &-socials {
-    &__item {
-      & i {
-        width: 36px;
-        height: 36px;
-        background: #333333;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        display: block;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 12px;
-        border: 2px solid $defaultText;
-        @include transition(.3);
-        &:before {
-          font-size: 20px;
-          color: #fff;
-          @include transition(.3);
-        }
-      }
-      &:hover {
-        & i {
-          background: $whiteColor;
-          &:before {
-            color: $defaultText;
-          }
-        }
-      }
-    }
-  }
   @media (max-width: $breakpoint-lg) {
     &-columns {
       display: flex;
@@ -114,6 +81,40 @@
   &:hover {
     & span:before {
       width: 100%;
+    }
+  }
+}
+
+.socials {
+  & a {
+    & i {
+      width: 36px;
+      height: 36px;
+      background: #333333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: block;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      border: 2px solid $defaultText;
+      @include transition(.3);
+      &:before {
+        font-size: 20px;
+        color: #fff;
+        @include transition(.3);
+      }
+    }
+    &:hover {
+      & i {
+        background: $whiteColor;
+        &:before {
+          color: $defaultText;
+        }
+      }
     }
   }
 }

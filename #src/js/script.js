@@ -1,17 +1,21 @@
 let front = {
-  hamburger: $('.js-menu-trigger'),
-  nav: $('.menu'),
+  hamburger: $('.hamburger'),
+  nav: $('.menu-container'),
+  $body: $('body'),
   init: function () {
       this.events();
   },
   toggleNav: function () {
-      if (!this.hamburger.hasClass('open')) {
-          this.hamburger.addClass('open');
-      } else {
-          this.hamburger.removeClass('open');
-          this.nav.toggleClass('active');
-      }
-  },
+    if (!this.hamburger.hasClass('open')) {
+        this.hamburger.addClass('open');
+        this.nav.toggleClass('active');
+        this.$body.addClass('active')
+        } else {
+            this.hamburger.removeClass('open');
+            this.nav.toggleClass('active');
+            this.$body.removeClass('active')
+        }
+    },
 
 
   openTab: function (element, tabName, parent) {
@@ -49,7 +53,7 @@ let front = {
 
   events: function () {
       let self = this;
-      $(document).on('click', '.menu__trigger', function () {
+      $(document).on('click', '.hamburger', function () {
           self.toggleNav();
       });
   }
@@ -233,7 +237,76 @@ $(window).scroll(function () {
           }
       });
     });
+    // document.addEventListener("DOMContentLoaded", function (event) {
+
+    //     let childrenItem = document.querySelectorAll('.menu-item-has-children > a');
+    //     for (let i = 0; i < childrenItem.length; i++) {
+    //         var btn = document.createElement("BUTTON");   // Create a <button> element
+    //         btn.className = "nav-btn";                    // add class
+    //         // btn.innerHTML = `<i class="icon-icon-arrow"></i>`;
+    //         childrenItem[i].appendChild(btn);
+    //     }
+    // });
     
+    // $(document).on('click', '.nav-btn', function (e) {
+    //     e.preventDefault();
+    //     var navTitle = document.createElement("p");
+    //     navTitle.className = "nav-title";        
+    //     navTitle.innerHTML = '<i class="icon-icon-arrow"></i>' + $(this).parent().text();
+    //     $(this).parent().parent().find('.sub-menu').prepend(navTitle);
+    //     if (!$(this).parent().parent().find('.sub-menu').hasClass('menuOpen')) {
+    //         $(this).parent().parent().find('.sub-menu').addClass('menuOpen');
+    //     } else {
+    //         $(this).parent().parent().find('.sub-menu').removeClass("menuOpen");
+    //     }
+    // });
+    
+    // $(document).on('click', '.nav-title', function (e) {
+    //     e.preventDefault();
+    //     if ($(this).parent().hasClass('menuOpen')) {
+    //         $(this).parent().removeClass("menuOpen");
+    //         $(this).remove();
+    //     }
+    // });
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        let childrenItem = document.querySelectorAll('.menu > .menu-item-has-children > a');
+        for (let i = 0; i < childrenItem.length; i++) {
+            var btn = document.createElement("BUTTON");   // Create a <button> element
+            btn.className = "nav-btn";                    // add class
+            btn.innerHTML = `<i class="icon-arrow-big"></i>`;
+            childrenItem[i].appendChild(btn);
+        }
+    });
+    
+    $(document).on('click', '.nav-btn', function (e) {
+        e.preventDefault();
+        var navTitle = document.createElement("p");
+        var navBack = document.createElement("span");
+        navTitle.className = "nav-title";        
+        navBack.className = "prev-page"
+        navBack.innerHTML = '<i class="icon-arrow-big"></i>Назад';
+        navTitle.innerHTML = $(this).parent().text();
+        $(this).parent().next().prepend(navBack);
+        $(this).parent().next('.sub-menu').prepend(navTitle);
+        if (!$(this).parent().next('.sub-menu').hasClass('menuOpen')) {
+            $(this).parent().next('.sub-menu').addClass('menuOpen');
+            $(this).parent().parent().addClass('show');
+        } else {
+            $(this).parent().next('.sub-menu').removeClass("menuOpen");
+        }
+    });
+    
+    
+    $(document).on('click', '.prev-page', function (e) {
+        e.preventDefault();
+        if ($(this).parent().hasClass('menuOpen')) {
+            $(this).parent().removeClass("menuOpen");
+            $(this).parent().find('p').remove();
+            $(this).parent().find('span').remove();
+            $(this).parent().parent().removeClass('show');
+        }
+    });
 // ScrollSpy
 
 //     const highlightScroll = () => {
