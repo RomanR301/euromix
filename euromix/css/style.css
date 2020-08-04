@@ -33,7 +33,7 @@
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?h7lkbl");
-  src: url("../fonts/icomoon.eot?h7lkbl#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?h7lkbl") format("truetype"), url("../fonts/icomoon.woff?h7lkbl") format("woff"), url("../fonts/icomoon.svg?h7lkbl#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?h7lkbl#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff?h7lkbl") format("woff"), url("../fonts/icomoon.svg?h7lkbl#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1071,6 +1071,23 @@ input[type=number] {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+.btn-primary {
+  background: #202020;
+  color: #ffffff;
+  border: 2px solid #202020;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 9px 24px;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn-primary:hover {
+  color: #333333;
+  background: #ffffff;
 }
 
 .btn-link {
@@ -3127,6 +3144,11 @@ button.swiper-pagination-bullet {
   font-size: 18px;
 }
 
+.contacts-wrapper {
+  margin: 0;
+  padding-bottom: 60px;
+}
+
 .contacts__info_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3189,6 +3211,46 @@ button.swiper-pagination-bullet {
 .contacts__form_submit button:hover {
   background: #ffffff;
   color: #202020;
+}
+
+.contacts-map__container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+
+.contacts-map__container img {
+  display: block;
+  width: 100%;
+}
+
+.other-page {
+  height: calc(100vh - 79px);
+}
+
+.other-page h1 {
+  font-size: 36px;
+  font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1900 - 300)));
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.other-page.error-page h1 {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 150px;
+  font-size: calc(50px + (150 - 50) * ((100vw - 300px) / (1900 - 300)));
+}
+
+.other-page p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.other-page a {
+  margin-top: 16px;
 }
 
 @media (min-width: 576px) {

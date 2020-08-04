@@ -1,6 +1,11 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+.contacts-wrapper {
+  margin: 0;
+  padding-bottom: 60px;
+}
+
 .contacts {
   &__info {
     @media (max-width: $breakpoint-lg) {
@@ -63,6 +68,19 @@
         background: $whiteColor;
         color: #202020;
       }
+    }
+  }
+}
+
+.contacts-map {
+  &__container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    & img {
+      display: block;
+      width: 100%;
     }
   }
 }

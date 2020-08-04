@@ -1,0 +1,53 @@
+@@include('_header.html')
+<main>
+  @@include('./scss/ui-kit/breadkrumb/_breadkrumb.html')
+  <section class="category">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 column">
+          <h1 class="section-heading">
+            Для жінок
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 column">
+          FILTERS
+        </div>
+        <div class="col-md-9 column">
+          <div class="row d-flex align-justify">
+            <p class="woocommerce-result-count">
+              Показано 1–1 із 3</p>
+            <form class="woocommerce-ordering" method="get">
+              <select name="orderby" class="orderby" aria-label="Замовлення магазину">
+                <option value="menu_order" selected="selected">Сортування за замовчуванням</option>
+                <option value="popularity">Сортувати за популярністю</option>
+                <option value="date">Сортувати за останніми</option>
+                <option value="price">Сортувати за ціною: від нижчої до вищої</option>
+                <option value="price-desc">Сортувати за ціною: від вищої до нижчої</option>
+              </select>
+              <input type="hidden" name="paged" value="1">
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-md-4 column">CARD ITEM</div>
+            <div class="col-md-4 column">CARD ITEM</div>
+            <div class="col-md-4 column">CARD ITEM</div>
+            <div class="col-md-4 column">CARD ITEM</div>
+            <div class="col-md-4 column">CARD ITEM</div>
+            <div class="col-md-4 column">CARD ITEM</div>
+            <div class="col-md-4 column">CARD ITEM</div>
+            <div class="col-md-4 column">CARD ITEM</div>
+            <div class="col-md-4 column">CARD ITEM</div>
+          </div>
+        </div>
+        <div class="col-md-12 d-flex align-center">
+          PAGINATION
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+@@include('_footer.html')
