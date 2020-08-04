@@ -15,10 +15,14 @@
   }
 }
 .header-lang {
-  display: none;
   position: absolute;
   bottom: -56px;
   left: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition-delay: 1s;
+  @include transition(.3);
   &-container {
     margin-right: 42px;
     position: relative;
@@ -77,4 +81,14 @@
   display: block;
 }
 
-
+.header-lang-container {
+  &:hover {
+    & .header-lang {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      transition-delay: 2s;
+      @include transition(.3);
+    }
+  }
+}

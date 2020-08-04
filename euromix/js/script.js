@@ -110,27 +110,27 @@ jQuery(function () {
   front.init();
   modal.init();
 
-  var lang = $('.lang');
-  var selection = $('.header-lang');
-  var select = selection.find('li');
+//   var lang = $('.lang');
+//   var selection = $('.header-lang');
+//   var select = selection.find('li');
 
-  lang.click(function(event) {
-      if (lang.hasClass('active')) {
-          lang.removeClass('active');
-          selection.stop().slideUp(200);
-      } else {
-          lang.addClass('active');
-          selection.stop().slideDown(200);
-      }
-      event.preventDefault();
-  });
-  if ($('.lang-item-uk').hasClass('current-lang')) {
-    $('.lang-ua').addClass('selected');
-    $('.lang-ru').removeClass('selected')
-  } else if ($('.lang-item-ru').hasClass('current-lang')) {
-      $('.lang-ua').removeClass('selected');
-      $('.lang-ru').addClass('selected')
-  } 
+//   lang.click(function(event) {
+//       if (lang.hasClass('active')) {
+//           lang.removeClass('active');
+//           selection.stop().slideUp(200);
+//       } else {
+//           lang.addClass('active');
+//           selection.stop().slideDown(200);
+//       }
+//       event.preventDefault();
+//   });
+//   if ($('.lang-item-uk').hasClass('current-lang')) {
+//     $('.lang-ua').addClass('selected');
+//     $('.lang-ru').removeClass('selected')
+//   } else if ($('.lang-item-ru').hasClass('current-lang')) {
+//       $('.lang-ua').removeClass('selected');
+//       $('.lang-ru').addClass('selected')
+//   } 
     var swiper = new Swiper('.swiper-banner', {
       cssMode: true,
       spaceBetween: 30,
@@ -145,6 +145,11 @@ jQuery(function () {
       mousewheel: true,
       keyboard: true,
     });
+
+    window.addEventListener("load", function () {
+        $(".swiper-container").addClass("loadSlider");
+     });
+      
 
     $(".product-carousel").each(function(index, element){
         var $this = $(this);
@@ -326,3 +331,26 @@ $(window).scroll(function () {
 //   }
 //   window.addEventListener('scroll', highlightScroll)
     
+$(function () {
+    $('.form-input, .form-textarea')
+        .on('focusin', function(){
+        $(this).parent().find('.label-name').addClass('active');
+    })
+        .on('focusout', function(){
+          $(this).parent().find('.label-name').removeClass('active');
+    })
+    $(".form-control input, .form-control textarea").focusout(function() {
+        let $this = $(this);
+        let $label = $this.parent().find('.label-name')
+
+        if ($this.val() != "") {
+            $this.addClass("has-content");
+            $label.addClass("active");
+        }
+        else {
+            $this.removeClass("has-content");
+            $label.removeClass("active");
+        }
+
+    })
+});

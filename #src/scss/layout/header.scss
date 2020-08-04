@@ -225,6 +225,7 @@
 }
 
 .menu {
+  display: flex;
   li {
     & .sub-menu {
       > a {

@@ -56,6 +56,26 @@
   line-height: 1;
 }
 
+.page-heading {
+  font-weight: 900;
+  font-weight: 900;
+  margin: 64px 0 48px 0;
+  position: relative;
+  &:before {
+    content: '';
+    background: url('../../img/circles.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-position: center;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    opacity: 0.5;
+  }
+}
+
 .section-carousel {
   & .section-heading {
     @media (max-width: $breakpoint-md) {
@@ -65,6 +85,8 @@
     }
   }
 }
+
+
 
 .icon-icon-arrow-slider-2:before {
   content: "\e901";

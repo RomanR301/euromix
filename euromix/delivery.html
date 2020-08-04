@@ -3,17 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
-  <title>Gulp</title>
-</head>
-
-<body>
-  <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
@@ -36,7 +25,7 @@
             </ul>
           </div>
           <div class="menu-header-menu-container">
-            <ul id="menu-header-menu" class="menu d-flex">
+            <ul id="menu-header-menu" class="menu">
               <li id="menu-item-28"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-28">
                 <a href="https://euromix.le-target.com/" aria-current="page">Головна</a></li>
@@ -160,151 +149,183 @@
     </div>
   </header>
   <div class="body-padding"></div>
-  <main>
-    <section class="other-page">
-      <div class="container-fluid full-height">
-        <div class="row d-flex align-center">
-          <div class="col-lg-8 text-center">
-            <div class="other-page__image default-icon">
-              <img src="./img/thank-you-image.svg" alt="Thank you">
-            </div>
-            <h1 class="text-wrapper">
-              <div class="text-inner other-page__title">thank you!</div>
-            </h1>
-            <p class="other-page__helper">
-              We will contact you as soon as possible!
-            </p>
-            <div class="button-circle other-page__link">
-              <a href="/">Go to home page</a>
-            </div>
-          </div>
+<!-- <section class="breadcrumb">
+  <div class="kama_breadcrumbs">
+    <span>
+      <a href="#">
+        <span itemprop="name">Головна сторінка</span>
+      </a>
+    </span>
+    <span>
+      <a href="#">
+        <span itemprop="name">Головна сторінка</span>
+      </a>
+    </span>
+    <span class="kb_title">Сео</span></div>
+</section> -->
+
+<!-- WOOCOMERCE BREADCRUMB -->
+
+<nav class="woocommerce-breadcrumb">
+  <a href="https://euromix.le-target.com/">Головна</a>
+  <a href="https://euromix.le-target.com/catalog/choloviky/">Чоловіки</a>
+  <a href="https://euromix.le-target.com/catalog/choloviky/odyag-uk/">Одяг</a>Чоловічі штани “Nike”
+</nav>
+<main>
+  <section class="delivery">
+    <div class="container-fluid">
+      <div class="row d-flex align-center">
+        <div class="col-md-10">
+          <h1 class="page-heading heading-1">
+            Оплата та доставка
+          </h1>
         </div>
       </div>
-    </section>
-  </main>
-
-
-  <div class="modal" id="callback-modal">
-  <div class="modal__body">
-    <div class="modal__content">
-      <div class="modal__close">
-        <img src="./img/modal-close.svg" alt="close modal">
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xl-5 col-lg-12">
-            <div class="modal__title">
-              <div class="modal__title_heading">Let’s get <br> in touch</div>
-              <div class="modal__title_helper">Want to discuss your project or partnership? <br>
-                We are always happy to talk with you!</div>
-              <a href="mailto:info@orangeorange.agency" class="modal__title_email">info@orangeorange.agency</a>
-            </div>
+      <div class="row d-flex align-center">
+        <div class="col-md-6 entry-content entry-content--modified">
+          <div class="delivery-item">
+            <h3>Доставка кур’єрською службою “Нова Пошта”</h3>
+            <img src="./img/novaposhta.jpg" alt="нова пошта">
+            <p>Зазвичай доставка займає 1-3 дні. Точну дату доставки товару вам повідомить менеджер інтернет-магазину
+              при
+              оформленні замовлення.
+            </p>
+            <p> Послуга «Грошовий переказ» оплачується згідно тарифів сервісу доставки.
+              На замовлення вартістю понад 15 000 грн діє безкоштовна доставка.
+              Адресна доставка неоплаченого замовлення на суму понад 15 000 грн не здійснюється.</p>
+            <p>
+              Передплачений товар може отримати тільки та людина, на кого оформлена доставка при наявності документів,
+              що
+              засвідчують особу (паспорт або водійське посвідчення).
+              Для отримання замовлення по накладеному платежу при собі необхідно мати документ, що засвідчує особу
+              (паспорт
+              або водійське посвідчення), у разі якщо сума перевищує 15 тис.грн також  знадобиться ідентифікаційний код.
+            </p>
           </div>
-          <div class="col-xl-4 col-lg-12">
-            <div class="modal__form">
-              <form action="sendEmail.php" method="POST" enctype="multipart/form-data">
-                <div class="form-section">
-                  <div class="form-heading">
-                    Select the area that you are interested in
-                  </div>
-                  <div class="form-required-fields">
-                    Select the area <span>*</span>
-                  </div>
-                  <div class="form-checkboxes-container">
-                    <div class="form-checkbox">
-                      <input type="checkbox" name="ux-ui-design" id="ux_ui_design">
-                      <label for="ux_ui_design">UX/UI Design</label>
-                    </div>
-                    <div class="form-checkbox">
-                      <input type="checkbox" name="web-development" id="web_development">
-                      <label for="web_development">Web Development</label>
-                    </div>
-                    <div class="form-checkbox">
-                      <input type="checkbox" name="corporative-website" id="corporative_website">
-                      <label for="corporative_website">Corporative Website</label>
-                    </div>
-                    <div class="form-checkbox">
-                      <input type="checkbox" name="landing-page" id="landing_page">
-                      <label for="landing_page">Landing Page</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-section">
-                  <div class="form-heading">
-                    Choose your budget
-                  </div>
-                  <div class="form-number-container">
-                    <div class="form-control">
-                      <input type="number" class="form-input" name="price-from" id="price_from" autocomplete="off" required/>
-                      <label for="price-from" class="label-name">
-                        From ($)<span>*</span>
-                      </label>
-                    </div>
-                    <div class="form-control">
-                      <input type="number" class="form-input" name="price-to" id="price_to" autocomplete="off" required/>
-                      <label for="price-to" class="label-name">
-                        To ($)<span>*</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-section">
-                  <div class="form-heading">
-                    Tell us about yourself
-                  </div>
-                  <div class="form-control">
-                    <input type="text" class="form-input" name="name" id="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                      Name<span>*</span>
-                    </label>
-                  </div>
-                  <div class="form-control">
-                    <input type="email" class="form-input" name="email" id="email" autocomplete="off" required />
-                    <label for="email" class="label-name">
-                      Email<span>*</span>
-                    </label>
-                  </div>
-                  <div class="form-control form-control-file">
-                    <input id="uploadFile" name="upload" class="form-input">
-                    <label for="" class="label-name">File</label>
-                    <div class="fileBrowse">
-                      <span class="wpcf7-form-control-wrap fileupload">
-                        <input type="file" name="upload" size="40" class="form-file"
-                          id="uploadBtn" accept=".png,.jpg,.jpeg,.zip,.rar,.doc,.docx,.txt" aria-invalid="false">
-                      </span>
-                    </div>
-                  </div>
-                  <div class="form-control">
-                    <textarea name="message" class="form-input" id="message" autocomplete="off" required></textarea>
-                    <label for="country" class="label-name">
-                      Your message<span>*</span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="form-submit-container button-circle">
-                  <button class="form-submit" type="submit">SEND MESSAGE</button>
-                </div>
-              </form>
-            </div>
+          <div class="delivery-item">
+            <h3>Доставка кур’єрською службою “Укр пошта</h3>
+            <img src="./img/ukrposhta.jpg" alt="укр пошта">
+            <p> Доставка товарів триває від 1-го до 4-х днів в межах всієї України і доставляє товари в найближче з
+              11500
+              відділень до вас.</p>
+            Ви можете оплатити посилку на відділенні, але перш Ви зможете оглянути товар і переконатися в його
+            цілісності.
+            При отриманні необхідно мати при собі паспорт або водійське посвідчення.
+            <p> Доставка товарів триває від 1-го до 4-х днів в межах всієї України і доставляє товари в найближче з
+              11500
+              відділень до вас.</p>
+            <p>Терміни доставки:</p>
+            <ul>
+              <li>В межах обласного центру - один день,</li>
+              <li>В межах області та між областями - до двох днів,</li>
+              <li>по Україні - до чотирьох днів.</li>
+            </ul>
+            <ol>
+              <li>В межах обласного центру - один день,</li>
+              <li>В межах області та між областями - до двох днів,</li>
+            </ol>
+            <p> Ви можете оплатити посилку на відділенні, але перш Ви зможете оглянути товар і переконатися в його
+              цілісності.
+              При отриманні необхідно мати при собі паспорт або водійське посвідчення.</p>
           </div>
         </div>
       </div>
     </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 col-xs-12 footer-columns">
+        <a href="#" class="footer-logo">
+          <img src="./img/main-logo.svg" alt="euromix">
+        </a>
+        <div class="footer-description">
+          EUROMIX – це потужний дистриб’ютор, а також офіційний імпортер товарів в Україну для ряду своїх партнерів.
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-xs-12 footer-columns">
+        <h4 class="footer-heading heading-4 --medium">
+          Євромікс
+        </h4>
+        <ul class="footer-list d-flex flex-column">
+          <li>
+            <a href="#">Про нас</a>
+          </li>
+          <li>
+            <a href="#">Таблиця розмірів</a>
+          </li>
+          <li>
+            <a href="#">Повернення та обмін</a>
+          </li>
+          <li>
+            <a href="#">Доставка та оплата</a>
+          </li>
+          <li>
+            <a href="#">Контакти</a>
+          </li>
+          <li>
+            <a href="#">Блог</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-4 col-xs-12 footer-columns">
+        <h4 class="footer-heading heading-4 --medium">
+          Категорії
+        </h4>
+        <ul class="footer-list d-flex flex-column">
+          <li>
+            <a href="#">Бренди</a>
+          </li>
+          <li>
+            <a href="#">Чоловіки</a>
+          </li>
+          <li>
+            <a href="#">Жінки</a>
+          </li>
+          <li>
+            <a href="#">Діти</a>
+          </li>
+          <li>
+            <a href="#">Для дому</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-12 footer-columns">
+        <h4 class="footer-heading heading-4 --medium">
+          Наші соціальні мережі
+        </h4>
+        <ul class="socials d-flex">
+          <li>
+            <a href="#">
+              <i class="icon-icon-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon-icon-facebook"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer-copyright d-flex align-justify w-100">
+        <div class="footer-column">
+          © EUROMIX,
+          <script>document.write(new Date().getFullYear())</script>
+        </div>
+        <div class="footer-column copyright-by">
+          <a href="#">Дизайн та розробка — <span>WebTune</span></a>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</footer>
 
-  <script src="js/libs.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/CSSRulePlugin.min.js"></script>
-  <script src="js/script.js"></script>
-
-
+<script src="js/libs.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
