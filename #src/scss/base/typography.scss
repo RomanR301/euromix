@@ -58,22 +58,48 @@
 
 .page-heading {
   font-weight: 900;
-  font-weight: 900;
   margin: 64px 0 48px 0;
   position: relative;
+  padding-left: 35px;
   &:before {
     content: '';
-    background: url('../../img/circles.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 72px;
     height: 72px;
-    background-position: center;
     position: absolute;
-    left: -30px;
+    left: 0;
     top: -30px;
-    opacity: 0.5;
+    z-index: -2;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+        linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+        $dot-color;
+      background-size: $dot-space $dot-space;
   }
+  &:after {
+    content: '';
+    width: 100%;
+    height: 150%;
+    left: 25px;
+    top: 0px;
+    position: absolute;
+    background: #fff;
+    z-index: -1;
+    pointer-events: none;
+  }
+  // &:before {
+  //   content: '';
+  //   background: url('../../img/circles.png');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   width: 72px;
+  //   height: 72px;
+  //   background-position: center;
+  //   position: absolute;
+  //   left: -30px;
+  //   top: -30px;
+  //   opacity: 0.5;
+  // }
 }
 
 .section-carousel {
