@@ -15,6 +15,15 @@
   @media (max-width: $breakpoint-lg) {
     padding: 20px 0;
   }
+  &-logo {
+    @media (max-width: $breakpoint-lg) {
+      max-width: 140px;
+      & img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
   &-search {
     margin-right: 42px;
     @media (max-width: $breakpoint-lg) {
