@@ -180,6 +180,23 @@ jQuery(function () {
               }
         });
     });
+        
+    var blogslider = new Swiper('.blog-recommendation-carousel', {
+        // cssMode: true,
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            767: {
+                spaceBetween: 24,
+
+            },
+        }
+      });
 });
 
 $(window).scroll(function () {

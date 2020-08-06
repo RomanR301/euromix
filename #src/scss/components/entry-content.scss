@@ -82,7 +82,7 @@
     max-width: 60%;
     position: relative;
     @media (max-width: $breakpoint-md) {
-      max-width: 85%;
+      max-width: 100%;
     }
     &:before {
       content: '';

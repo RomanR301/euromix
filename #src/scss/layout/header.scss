@@ -305,9 +305,9 @@
     display: none; 
     position: fixed;
     width: 100%;
-    height: calc(100% - 76px);
+    height: calc(100% - 69px);
     left: 0;
-    top: 76px;
+    top: 69px;
     background: #fff;
     padding: 40px 12px;
     overflow: hidden;
@@ -326,6 +326,8 @@
   }
   & .header-lang {
     position: static;
+    visibility: visible;
+    opacity: 1;
   }
 }
 
