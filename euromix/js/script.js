@@ -197,6 +197,23 @@ jQuery(function () {
             },
         }
       });
+      $(document).on('click', '.woof_container_inner h4', function () {
+        let item = $(this);
+        let list = $(this).next('.woof_block_html_items');
+        if (item.hasClass('active')) {
+            item.removeClass('active');
+            list.slideToggle();
+        } else {
+            item.addClass('active');
+            list.slideToggle();
+        }
+      });
+      $(document).on('click', '.btn-filter', function () {
+        let item = $(this);
+        let list = $(this).next('.filter-container');
+        $('body').toggleClass('active');
+        $('.filter-container').toggleClass('active');
+      });
 });
 
 $(window).scroll(function () {

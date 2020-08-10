@@ -208,12 +208,6 @@ jQuery(function () {
             list.slideToggle();
         }
       });
-      $(document).on('click', '.btn-filter', function () {
-        let item = $(this);
-        let list = $(this).next('.filter-container');
-        $('body').toggleClass('active');
-        $('.filter-container').toggleClass('active');
-      });
 });
 
 $(window).scroll(function () {
