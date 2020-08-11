@@ -328,7 +328,7 @@ input[type=number] {
 
 .page-heading:after {
   content: '';
-  width: 100%;
+  width: 80%;
   height: 150%;
   left: 25px;
   top: 0px;
@@ -709,56 +709,46 @@ input[type=number] {
   margin: 0;
 }
 
-.tabs {
-  padding-top: 2vw;
-  overflow: hidden;
+.tabs .row {
+  width: 100%;
 }
 
 .tabs-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.tabs-list__item {
-  margin-right: 24px;
+  max-width: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .tabs-list__item_link {
-  font-family: 'RW black', sans-serif;
-  padding-bottom: 0.9vh;
+  margin: 3px;
+  display: block;
+}
+
+.tabs-list__item_link.btn-primary {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  font-size: 1.62162vw;
-  text-transform: uppercase;
-  line-height: 2.25225vw;
+  background: #ffffff;
   color: #333333;
-  position: relative;
   cursor: pointer;
 }
 
-.tabs-list__item_link:before {
-  content: '';
-  position: absolute;
-  background: #FDC430;
-  border-radius: 4px;
-  width: 100%;
-  height: 0.8vw;
-  bottom: 1px;
-  z-index: -1;
-  opacity: 0;
-  visibility: hidden;
+.tabs-list__item_link.btn-primary:hover {
+  background: #333333;
+  color: #ffffff;
 }
 
-.tabs-list__item_link.active:before {
-  opacity: 1;
-  visibility: visible;
+.tabs-list__item_link.btn-primary.active {
+  background: #333333;
+  color: #ffffff;
 }
 
 .tabs-wrap {
-  padding-top: 3vw;
-  max-width: 96%;
+  width: 100%;
+  padding-top: 35px;
 }
 
 .tabs-wrap .tab-content {
@@ -1126,9 +1116,9 @@ input[type=number] {
 
 .btn-primary,
 .btn-outline {
-  background: #202020;
+  background: #333333;
   color: #ffffff;
-  border: 2px solid #202020;
+  border: 2px solid #333333;
   font-size: 16px;
   line-height: 24px;
   padding: 9px 24px;
@@ -1398,6 +1388,49 @@ input[type=number] {
   top: -18px;
 }
 
+.search {
+  min-height: calc(100vh - 180px);
+}
+
+.search .page-heading {
+  margin-bottom: 24px;
+}
+
+.search-form {
+  margin-left: 20px;
+  position: relative;
+  width: 420px;
+}
+
+.search-form:after {
+  position: absolute;
+  font-family: icomoon;
+  content: "\e905";
+  right: 15px;
+  top: calc(50% - 17px);
+  font-size: 20px;
+}
+
+.search-form input {
+  padding: 10px 50px 10px 16px;
+  border: 2px solid #333333;
+  font-size: 16px;
+  width: 100%;
+}
+
+.search-results {
+  margin: 0 0 16px 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7C7C7C;
+}
+
+.search-results span {
+  color: #333333;
+  font-weight: 700;
+  padding: 0 4px;
+}
+
 .product {
   display: block;
   height: 100%;
@@ -1604,6 +1637,10 @@ input[type=number] {
 
 .w-100 {
   width: 100%;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
 }
 
 .column {
@@ -3645,21 +3682,31 @@ button.swiper-pagination-bullet {
 
 .other-page {
   height: calc(100vh - 79px);
+  position: relative;
+  overflow: hidden;
+}
+
+.other-page-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .other-page h1 {
-  font-size: 36px;
-  font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1900 - 300)));
+  font-size: 56px;
+  font-size: calc(24px + (56 - 24) * ((100vw - 300px) / (1900 - 300)));
   line-height: 1.2;
-  font-weight: 500;
+  font-weight: 900;
   margin-bottom: 16px;
 }
 
 .other-page.error-page h1 {
-  font-weight: 700;
   margin-bottom: 0;
   font-size: 150px;
-  font-size: calc(50px + (150 - 50) * ((100vw - 300px) / (1900 - 300)));
+  font-size: calc(100px + (150 - 100) * ((100vw - 300px) / (1900 - 300)));
 }
 
 .other-page p {
@@ -3669,6 +3716,14 @@ button.swiper-pagination-bullet {
 
 .other-page a {
   margin-top: 16px;
+}
+
+.search .product {
+  overflow: hidden;
+}
+
+.search .product-list {
+  margin-top: 36px;
 }
 
 .category {
@@ -3980,6 +4035,43 @@ button.swiper-pagination-bullet {
   background-repeat: no-repeat;
   background-position: center right 4%;
   max-width: 320px;
+}
+
+.sizes img {
+  display: block;
+  max-width: 80%;
+}
+
+.sizes__image {
+  text-align: center;
+  margin-top: -86px;
+}
+
+.sizes__image img {
+  max-width: 220px;
+  margin: auto;
+}
+
+.sizes table {
+  width: 360px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.sizes table th {
+  font-weight: 700;
+}
+
+.sizes table th,
+.sizes table td {
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px;
+}
+
+.sizes table tr:nth-child(odd) {
+  background: rgba(32, 32, 32, 0.1);
 }
 
 @media (min-width: 576px) {
@@ -4404,18 +4496,8 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 991px) {
-  .tabs-list__item_link {
-    padding-bottom: 0;
-  }
-
-  .tabs-list__item_link {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .tabs-list__item_link:before {
-    height: 8px;
-    bottom: -3px;
+  .tabs-list {
+    max-width: 100%;
   }
 
   .tabs-wrap {
@@ -4644,6 +4726,10 @@ button.swiper-pagination-bullet {
   .blog-item:nth-child(7) {
     width: 44.14414vw;
   }
+
+  .sizes__image {
+    margin: 0 0 30px 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -4666,6 +4752,17 @@ button.swiper-pagination-bullet {
 
   .seo {
     margin: 24px 0 32px 0;
+  }
+
+  .tabs .row.w-100 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .tabs-list__item_link.btn-primary {
+    padding: 4px 12px;
   }
 
   .category-carousel-link {
@@ -4721,6 +4818,10 @@ button.swiper-pagination-bullet {
   .form-control label {
     font-size: 14px;
     line-height: 25px;
+  }
+
+  .search-form {
+    width: 300px;
   }
 
   .p-0 {
@@ -4868,6 +4969,19 @@ button.swiper-pagination-bullet {
   .filter-container.active .btn-filter {
     margin-bottom: 24px;
   }
+
+  .sizes img {
+    margin: auto;
+    max-width: 300px;
+  }
+
+  .sizes__image img {
+    max-width: 150px;
+  }
+
+  .sizes table {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -4903,6 +5017,16 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .other-page-image img {
+    width: 150%;
+    -o-object-position: right;
+       object-position: right;
+  }
+
+  .other-page.error-page .other-page-image img {
+    width: 180%;
   }
 }
 

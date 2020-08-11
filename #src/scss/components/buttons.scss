@@ -3,9 +3,9 @@
 
 .btn {
   &-primary, &-outline {
-    background: #202020;
+    background: $defaultText;
     color: $whiteColor;
-    border: 2px solid #202020;
+    border: 2px solid $defaultText;
     font-size: 16px;
     line-height: 24px;
     padding: 9px 24px;

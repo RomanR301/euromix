@@ -122,3 +122,44 @@
     }
   }
 }
+
+.search {
+  min-height: calc(100vh - 180px);
+  & .page-heading {
+    margin-bottom: 24px;
+  }
+  &-form {
+    margin-left: 20px;
+    position: relative;
+    width: 420px;
+    @media (max-width: $breakpoint-md) {
+      width: 300px;
+    }
+    &:after {
+      position: absolute;
+      font-family: icomoon;
+      content: "\e905";
+      right: 15px;
+      top: calc(50% - 17px);
+      font-size: 20px;
+    }
+    & input {
+      padding: 10px 50px 10px 16px;
+      border: 2px solid #333333;
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+  &-results {
+    margin: 0 0 16px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $heavyGreyColor;
+    & span {
+      color: $defaultText;
+      font-weight: 700;
+      padding: 0 4px;
+    }
+  }
+}
+

@@ -1,0 +1,246 @@
+@@include('_header.html')
+@@include('./scss/ui-kit/breadkrumb/_breadkrumb.html')
+<main>
+  <section class="sizes">
+    <div class="container-fluid">
+      <div class="row d-flex align-center">
+        <div class="column col-md-10 col-xs-12">
+          <h1 class="page-heading heading-1">
+            Таблиця розмірів
+          </h1>
+        </div>
+      </div>
+      <div class="row d-flex align-center">
+        <div class="col-md-10">
+          <div class="tabs">
+            <div class="tabs-ul-wrapper d-flex">
+              <ul class="tabs-list tabs-ul">
+                <li class="tabs-list__item">
+                  <a onclick="front.openTab(this, 'size-0','.tabs')"
+                    class="tabs-list__item_link tab-links active btn-primary">Чоловіки</a>
+                </li>
+                <li class="tabs-list__item">
+                  <a onclick="front.openTab(this, 'size-1','.tabs')"
+                    class="tabs-list__item_link tab-links btn-primary">Жінки</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs-wrap">
+              <div class="tab-content active" id="size-0">
+                <div class="tabs d-flex align-justify">
+                  <ul class="tabs-list tabs-ul">
+                    <li class="tabs-list__item">
+                      <a onclick="front.openTab(this, 'size-0-0','.tabs')"
+                        class="tabs-list__item_link tab-links btn-primary active">Футболки та майки</a>
+                    </li>
+                    <li class="tabs-list__item">
+                      <a onclick="front.openTab(this, 'size-0-1','.tabs')"
+                        class="tabs-list__item_link tab-links btn-primary">Сорочки</a>
+                    </li>
+                    <li class="tabs-list__item">
+                      <a onclick="front.openTab(this, 'size-0-2','.tabs')"
+                        class="tabs-list__item_link tab-links btn-primary">Шорти</a>
+                    </li>
+                    <li class="tabs-list__item">
+                      <a onclick="front.openTab(this, 'size-0-2','.tabs')"
+                        class="tabs-list__item_link tab-links btn-primary">Шорти</a>
+                    </li>
+                    <li class="tabs-list__item">
+                      <a onclick="front.openTab(this, 'size-0-2','.tabs')"
+                        class="tabs-list__item_link tab-links btn-primary">Шорти</a>
+                    </li>
+                    <li class="tabs-list__item">
+                      <a onclick="front.openTab(this, 'size-0-2','.tabs')"
+                        class="tabs-list__item_link tab-links btn-primary">Шорти</a>
+                    </li>
+                    <li class="tabs-list__item">
+                      <a onclick="front.openTab(this, 'size-0-2','.tabs')"
+                        class="tabs-list__item_link tab-links btn-primary">Шорти</a>
+                    </li>
+                  </ul>
+                  <div class="tabs-wrap">
+                    <div class="tab-content active" id="size-0-0">
+                      <div class="row w-100 align-justify">
+                        <div class="col-lg-8 col-md-6 col-xs-12">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <th>Розмір</th>
+                                <th>A</th>
+                                <th>B</th>
+                              </tr>
+                              <tr>
+                                <td>44</td>
+                                <td>52</td>
+                                <td>45,1</td>
+                              </tr>
+                              <tr>
+                                <td>46</td>
+                                <td>54</td>
+                                <td>47</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                          <div class="sizes__image">
+                            <img src="./img/table-sizes-man.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-content" id="size-0-1">
+                      <div class="row w-100 align-justify">
+                        <div class="col-lg-8 col-md-12">
+                          <img src="./img/cloth-sizes.jpg" alt="">
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                          <div class="sizes__image">
+                            <img src="./img/table-sizes-man.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-content" id="size-0-2">
+                      чоловіки, сорочки, таблиця
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content" id="size-1">
+                <div class="tabs d-flex align-justify">
+                  <ul class="tabs-list tabs-ul">
+                    <li class="tabs-list__item">
+                      <a onclick="front.openTab(this, 'size-1-0','.tabs')"
+                        class="tabs-list__item_link tab-links btn-primary">Футболки та майки</a>
+                    </li>
+                    <li class="tabs-list__item">
+                      <a onclick="front.openTab(this, 'size-1-1','.tabs')"
+                        class="tabs-list__item_link tab-links btn-primary">Сорочки</a>
+                    </li>
+                  </ul>
+                  <div class="tabs-wrap">
+                    <div class="tab-content active" id="size-1-0">
+                      <div class="row w-100 align-justify">
+                        <div class="col-md-8">
+                          <img src="./img/cloth-sizes.jpg" alt="">
+                        </div>
+                        <div class="col-md-4">
+                          <div class="sizes__image">
+                            <img src="./img/table-sizes-women.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-content" id="size-1-1">
+                      <div class="row w-100 align-justify">
+                        <div class="col-md-8">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <th>Розмір</th>
+                                <th>A</th>
+                                <th>B</th>
+                              </tr>
+                              <tr>
+                                <td>44</td>
+                                <td>52</td>
+                                <td>45,1</td>
+                              </tr>
+                              <tr>
+                                <td>46</td>
+                                <td>54</td>
+                                <td>47</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>56</td>
+                                <td>49</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="sizes__image">
+                            <img src="./img/table-sizes-women.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('_footer.html')
